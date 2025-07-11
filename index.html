@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheet Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="export-btn" class="export-btn">Export to CSV</button>
+
+    <div class="formula-bar-container">
+      <div class="formula-bar-name-box-wrapper">
+        <div class="selected-name-box-container">
+          <div class="selected-name-box">
+            <span id="cell-status"></span>
+          </div>
+        </div>
+        <div class="formula-bar-separator-container">
+          <div class="formula-bar-separator"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sheet-container"></div>
+    <div class="add-rows">
+      <button id="add-rows-btn" class="add-rows btn">Add</button>
+      <input
+        type="number"
+        id="row-count"
+        class="row-count"
+        placeholder="100"
+        value="100"
+      />
+      <div class="add-rows-text">rows at the bottom</div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
